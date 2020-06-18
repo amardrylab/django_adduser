@@ -38,7 +38,7 @@
     >>>users=AddUser.objects.all()
     >>>from django.contrib.auth.models import User
     >>>for user in users:
-    ...User.objects.create_user(user.email, user.name, "GoponPass")
+    ...User.objects.create_user(user.name, user.email, "GoponPass")
     ...
     >>>quit()
 
